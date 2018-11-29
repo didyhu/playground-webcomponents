@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "python bin/start.py"
+    "start": "npm run electron",
+    "browser": "python bin/start-browser.py",
+    "electron": "python bin/start-electron.py"
   },
   "author": "didyhu",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^3.0.10"
+    "electron": "^3.0.10",
+    "http-server": "^0.11.1"
   }
 }

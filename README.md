@@ -12,8 +12,13 @@ $npm install
 ```
 
 ## Startup
+run in a browser
 ```
-$npm start
+$npm run browser
+```
+run in electron
+```
+$npm run electron
 ```
 
 

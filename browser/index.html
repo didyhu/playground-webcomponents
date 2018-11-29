@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playground - Web Components</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <main-container>
+        <!-- templates -->
+        <template name="my-input-tpl">
+            <label data-role="label"></label><input data-role="input">
+        </template>
+        <template name="my-button-tpl">
+            <button data-role="button"></button>
+            <p data-role="message" class="message"></p>
+        </template>
+        <!-- content -->
+        <h1>Users Table</h1>
+        <my-users id="my-users0">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <template name="row">
+                <tr>
+                    <td data-name="username"></td>
+                    <td data-name="password"></td>
+                    <td data-name="age"></td>
+                </tr>
+            </template>
+        </my-users>
+        <my-form id="register-form" class="form">
+            <my-input class="form-control" label="Username" type="text" name="username" template="my-input-tpl"></my-input>
+            <my-input class="form-control" label="Password" type="password" name="password" template="my-input-tpl"></my-input>
+            <my-input class="form-control" label="Age" type="number" name="age" template="my-input-tpl"></my-input>
+            <my-button class="form-button" type="submit" template="my-button-tpl">Submit</my-button>
+        </my-form>
+    </main-container>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
