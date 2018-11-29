@@ -13,7 +13,7 @@ customElements.define("main-container", class extends HTMLElement {
             ]
         }
         document.querySelector("#my-users0").update(this.state.users)
-        document.addEventListener("my-form-submit", this.onSubmitNewUser.bind(this))
+        document.querySelector("#register-form").addEventListener("my-form-submit", this.onSubmitNewUser.bind(this))
     }
     onSubmitNewUser(event) {
         const formData = event.detail
