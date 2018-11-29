@@ -1,0 +1,19 @@
+.form{
+    display:flex;
+    flex-direction: column;
+
+}
+.form-control{
+    display: flex;
+    justify-content: space-between;
+}
+.form-control>*{
+    flex:1;
+}
+.form-button .message[type=error]{
+    color:red;
+}
+.form-button .message[type=ok]{
+    display: none;
+}
+

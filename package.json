@@ -1,0 +1,13 @@
+{
+  "name": "playground-webcomponent",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "python bin/start.py"
+  },
+  "author": "didyhu",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.10"
+  }
+}
