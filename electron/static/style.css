@@ -16,4 +16,13 @@
 .form-button .message[type=ok]{
     display: none;
 }
+.clock{
+    display:flex;
+}
+.clock>*::before{
+    content:":";
+}
+.clock>*:first-child::before{
+    content:"";
+}
 

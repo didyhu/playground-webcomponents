@@ -2,6 +2,7 @@ customElements.define("my-button", require("./controllers/my-button"))
 customElements.define("my-form", require("./controllers/my-form"))
 customElements.define("my-input", require("./controllers/my-input"))
 customElements.define("my-users", require("./components/my-users"))
+customElements.define("my-clock", require("./components/my-clock"))
 customElements.define("main-container", class extends HTMLElement {
     constructor() {
         super()
